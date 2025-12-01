@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Barbeari-MVP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="cabecario">
+        <img src="barbershop.png" alt="Logo da marca" >
+        <div id="menu"></div>
+        <ul id="menu_ul">
+            <div id="fechar_menu" class="fechar"></div>
+            <li>Seja Premiun</li>
+            <li>Contato</li>
+            <li>Sobre</li>
+            <li>Promoçoes</li>
+            <li>Agenda Horario</li>
+        </ul>
+    </nav>
+    <section class="main">
+        Barbearia <br> Cardoso
+    </section>
+    <h2>Meus trampo</h2>
+    <section class="baner">
+    <img src="0ffd64e1e33f59a862f29c5ecad9a702.jpg" class="slide ativo">
+    <img src="3e8e24094229149563b2a9097f0a3e0d.jpg" class="slide">
+    <img src="3f86f99c503d1aada2b9903c73b5c9f1.jpg" class="slide">
+    <img src="corte-de-cabelo-masculino-2018-arrepiado-com-textura (6).jpg" class="slide">
+    <img src="post_55715.jpg" class="slide">
+    </section>
+    <div id="mapa">
+        <img src="geo-alt-fill.svg" alt="mapa" >
+        <div>
+        <h4>Rio preto</h4>
+        <p>Rua antonio, Nº222, centro</p>
+        <a href="https://www.google.com/maps?sca_esv=81bd514f0afe5427&sxsrf=AE3TifO4lDrYYA7MCR8uwor-orb85TtE5w:1764543322171&gs_lp=Egxnd3Mtd2l6LXNlcnAiDHJpbyBwcmV0byBzZioCCAAyGRAuGIAEGLEDGIMBGBQYxwEYhwIYjgUYrwEyDhAuGIAEGMcBGI4FGK8BMgUQABiABDIKEAAYgAQYFBiHAjIOEC4YgAQYxwEYjgUYrwEyDhAuGIAEGMcBGI4FGK8BMg4QLhiABBjHARiOBRivATIFEC4YgAQyBRAAGIAEMgUQABiABEj-J1AAWIkccAF4AZABAZgBmxKgAaEuqgENMy0xLjEuNy0xLjEuMbgBAcgBAPgBAZgCBaACwRzCAhkQLhiABBixAxhDGIMBGMcBGIoFGI4FGK8BwgINEC4YgAQYsQMYQxiKBcICChAAGIAEGEMYigXCAhMQLhiABBhDGMcBGIoFGI4FGK8BwgITEC4YgAQYFBiHAhjHARiOBRivAcICBxAuGIAEGArCAgkQABiABBgKGAuYAwDiAwUSATEgQJIHDTEuMy0xLjEuMC4xLjGgB59wsgcLMy0xLjEuMC4xLjG4B7kcwgcFMi0zLjLIBzE&um=1&ie=UTF-8&fb=1&gl=br&sa=X&geocode=KTUTh2r2sr2UMTxXJaeHO8gQ&daddr=Av.+Brg.+Faria+Lima,+6363+-+Jardim+Morumbi,+S%C3%A3o+Jos%C3%A9+do+Rio+Preto+-+SP,+15090-900">rota do endenreço</a>
+        </div>
+    </div>
+    <button class="butao" onclick="agendar()">Agendar Horario</button>
+    <div id="pup" class="pup" style="display: none;"></div>
+    <nav class="servico"> 
+    <ul class="tipo_servico">
+        <li data-target="completo">Completo</li>
+        <li data-target="cabelo">Cabelo</li>
+        <li data-target="barba">Barba</li>
+        <li data-target="quimica">Quimica</li>
+    </ul>
+</nav>
+
+<section id="completo" class="conteudo">
+    <div class="containe"><img src="0ffd64e1e33f59a862f29c5ecad9a702.jpg"><div class="inf"><strong>Corte Social</strong>  <br> Duração <span class="tempo">40min</span><br>R$25,00</div></div>
+    <div class="containe"><img src="3e8e24094229149563b2a9097f0a3e0d.jpg"><div class="inf"><strong> Degrade Navalha</strong> <br> Duração <span class="tempo">40min</span><br>R$35,00 </div></div>
+    <div class="containe"><img src="3f86f99c503d1aada2b9903c73b5c9f1.jpg"><div class="inf"><strong>Corte Moderno</strong> <br> Duração <span class="tempo">40min</span> <br>R$45,00</div></div>
+
+</section>
+
+<section id="cabelo" class="conteudo ativo">
+    <div class="containe"><img src="0ffd64e1e33f59a862f29c5ecad9a702.jpg"><div class="inf"><strong>Corte Social</strong>  <br> Duração <span class="tempo">40min</span><br>R$25,00</div></div>
+    <div class="containe"><img src="3e8e24094229149563b2a9097f0a3e0d.jpg"><div class="inf"><strong> Degrade Navalha</strong> <br> Duração <span class="tempo">40min</span><br>R$35,00 </div></div>
+    <div class="containe"><img src="3f86f99c503d1aada2b9903c73b5c9f1.jpg"><div class="inf"><strong>Corte Moderno</strong> <br> Duração <span class="tempo">40min</span> <br>R$45,00</div></div>
+</section>
+
+<section id="barba" class="conteudo">
+    <div class="containe"><img src="barba 1.jpg"><div class="inf"><strong>Corte Social</strong>  <br> Duração <span class="tempo">40min</span><br>R$25,00</div></div>
+    <div class="containe"><img src="barba 2.jpg"><div class="inf"><strong> Degrade Navalha</strong> <br> Duração <span class="tempo">40min</span><br>R$35,00 </div></div>
+    <div class="containe"><img src="barba 3.jpg"><div class="inf"><strong>Corte Moderno</strong> <br> Duração <span class="tempo">40min</span> <br>R$45,00</div></div>
+
+</section>
+
+<section id="quimica" class="conteudo">
+    <div class="containe"><img src="platina 1.jpg"><div class="inf"><strong>Corte Social</strong>  <br> Duração <span class="tempo">40min</span><br>R$25,00</div></div>
+    <div class="containe"><img src="platina 2.jpg"><div class="inf"><strong> Degrade Navalha</strong> <br> Duração <span class="tempo">40min</span><br>R$35,00 </div></div>
+    <div class="containe"><img src="platina 3.jpg"><div class="inf"><strong>Corte Moderno</strong> <br> Duração <span class="tempo">40min</span> <br>R$45,00</div></div>
+
+</section>
+
+<button id="premiun" class="butao">Seja premiun <img src="gem.svg"></button>
+
+    <script>
+            const fechar = document.getElementById("fechar_menu");
+            const menu = document.getElementById("menu");
+            const menu_ul = document.getElementById("menu_ul");
+
+            menu.addEventListener("click", ()=>{
+            menu_ul.classList.add("abrir");
+            
+            
+            
+        });
+            fechar.addEventListener("click", ()=>{
+            menu_ul.classList.remove("abrir");
+            
+        
+       });
+       
+            const slides = document.querySelectorAll(".slide");
+            let index = 0;
+
+            setInterval(() => {
+            slides[index].classList.remove("ativo");
+            index = (index + 1) % slides.length;
+            slides[index].classList.add("ativo");
+            }, 3000);
+
+            function agendar(){
+            const pup = document.getElementById("pup");
+            pup.style.display = "block";
+
+            const agenda_pup = document.createElement("div");
+            agenda_pup.classList.add("pup_agenda");
+            const text_agenda = document.createElement("p");
+            text_agenda.innerHTML = "Atendimento de segunda a sexta <br> das 9h as 20h <br> aos sabados das <br> 9h as 15h.";
+            agenda_pup.append(text_agenda);
+            const link_whats = document.createElement("div");
+            link_whats.classList.add("whats");
+            link_whats.innerHTML = "Agendar"
+            link_whats.addEventListener("click",()=>{
+                window.location.href = "https://wa.me/5517992240479";
+            });
+            agenda_pup.prepend(link_whats);
+            
+
+            const fechar_agenda = document.createElement("div");
+            fechar_agenda.classList.add("fechar");
+            fechar_agenda.addEventListener("click",()=>{
+                document.querySelectorAll(".pup_agenda p").forEach(p => p.remove());
+                link_whats.innerHTML = ""
+                agenda_pup.classList.remove("pup_agenda");
+                fechar_agenda.classList.remove("fechar");
+                link_whats.classList.remove("whats");
+                
+            })
+            agenda_pup.prepend(fechar_agenda)
+            document.body.appendChild(agenda_pup);
+        }
+
+
+     const itens = document.querySelectorAll(".tipo_servico li");
+const secoes = document.querySelectorAll(".conteudo");
+
+itens.forEach(li => {
+    li.addEventListener("click", () => {
+
+        // remove ativo de todos os li
+        itens.forEach(item => item.classList.remove("ativo"));
+        li.classList.add("ativo");
+
+        // esconde todas as seções
+        secoes.forEach(sec => sec.classList.remove("ativo"));
+
+        // pega o id da seção que deve aparecer
+        const alvo = li.getAttribute("data-target");
+        document.getElementById(alvo).classList.add("ativo");
+    });
+});
+       
+
+    </script>
+</body>
+</html>
